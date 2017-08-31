@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="wired-menu-bar">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `wired-menu-bar`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class WiredMenuBar extends Polymer.Element {
+      static get is() { return 'wired-menu-bar'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'wired-menu-bar'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(WiredMenuBar.is, WiredMenuBar);
+  </script>
+</dom-module>
